@@ -1,11 +1,11 @@
 var move = false;
 
-if(keyboard_check(vk_right) && place_free(x+walkSpd)){
+if(keyboard_check(vk_right) && place_free(x+walkSpd,y)){
      x+=walkSpd;
      image_xscale = 1;
      move = true;
 }
-else if(keyboard_check(vk_left) && place_free(x-walkSpd)){
+else if(keyboard_check(vk_left) && place_free(x-walkSpd,y)){
      x-=walkSpd;
      image_xscale = -1;
      move = true;
